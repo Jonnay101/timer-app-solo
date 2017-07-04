@@ -19,8 +19,9 @@ $large-font: $medium-spacing;
 .clock-digits {
   display: inline-block;
   font-size: $large-font;
+  line-height: $large-font;
   background: $white;
-  margin-top: ($clock-size / 2) - $large-font;
+  margin-top: ($clock-size / 2) - ($large-font / 2);
   padding: 0 $small-spacing;
   font-family: monospace;
 }

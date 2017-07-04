@@ -1,3 +1,7 @@
 input.timer-running {
   background: red !important;
 }
+
+input.control-btn {
+  width: $large-spacing * 1.5;
+}

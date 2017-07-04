@@ -30,7 +30,7 @@ var Timer = React.createClass({
   },
   startTimer: function () {
     var that = this;
-    timer = window.setInterval(() => this.timerCallback(count), 200);
+    timer = window.setInterval(() => this.timerCallback(count), 1000);
   },
   stopTimer: function () {
     window.clearInterval(timer);
@@ -41,7 +41,7 @@ var Timer = React.createClass({
       timerRunning: false,
       clearState: false,
       secs: 0,
-      mins: 0      
+      mins: 0
     })
   },
   handleTimer: function (timerState) {
@@ -61,7 +61,7 @@ var Timer = React.createClass({
     }
   },
   handleClear: function (clearState) {
-    console.log(clearState)
+
     if (clearState) {
       this.clearTimer();
     }
