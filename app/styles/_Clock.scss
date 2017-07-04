@@ -1,0 +1,26 @@
+$clock-size: 16rem;
+$primary-color: #22abff;
+$white: #fefefe;
+$medium-spacing: 2rem;
+$small-spacing: $medium-spacing / 2;
+$large-spacing: $medium-spacing * 2;
+$large-font: $medium-spacing;
+
+.clock-face {
+  width: $clock-size;
+  height: $clock-size;
+  border-radius: $clock-size / 2;
+  background: $primary-color;
+  border: 5px solid #aaa;
+  margin-top: $medium-spacing;
+  margin-bottom: $medium-spacing;
+}
+
+.clock-digits {
+  display: inline-block;
+  font-size: $large-font;
+  background: $white;
+  margin-top: ($clock-size / 2) - $large-font;
+  padding: 0 $small-spacing;
+  font-family: monospace;
+}
